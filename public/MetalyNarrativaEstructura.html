@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Power metal: Entre la epica y las guitarras</title>
+  <meta name="description" content="Un vistazo por los mundos fantasticos y la musica que los acompaña">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Zilla+Slab:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="MetalyNarrativaEstilo.css">
+  <script src="MetalyNarrativaScript.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <h1>Power Metal: Entre la epica y las guitarras</h1>
+    <p class="lema">La experiencia de un fanatico de la fantasia y el metal</p>
+    <nav aria-label="Secciones">
+      <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#comentarios">Comentarios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="introduccion" aria-labelledby="titulo-intro">
+      <h2 id="titulo-intro">¿Qué es el Power Metal?</h2>
+      <p>El Power Metal es uno de los muchos subgéneros del metal, caracterizado por ser especialmente bombástico y teatral. Es música enfocada en la velocidad, con letras de temática épica o fantástica y arreglos operísticos.</p>
+      <p>Algunas bandas destacadas han llevado este género a otro nivel gracias a elementos muy particulares que las definen:</p>
+    </section>
+
+    <section id="galeria" aria-labelledby="titulo-galeria">
+      <h2 id="titulo-galeria">Galería de bandas</h2>
+      <div class="rejilla">
+        <figure>
+          <img src="https://cdn-images.dzcdn.net/images/cover/32cef7b184b79c5edfdd7c5760f0c8e8/0x1900-000000-80-0-0.jpg" alt="Rhapsody of Fire" loading="lazy" width="400" height="300">
+          <figcaption><strong>Rhapsody of Fire</strong> <em>Italiana</em><br>Legendarios por la serie de albumes conceptuales "Emerald Sword Saga"</figcaption>
+        </figure>
+        <figure>
+          <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/e/6/7/5/e675b670f22c05425f1d10b1055aa733.jpg" alt="DragonForce" loading="lazy" width="400" height="300">
+          <figcaption><strong>DragonForce</strong> <em>Britanica</em><br>Con un instrumental veloz y canciones clasicas como "Through the Fire and Flames" y "Fury of the Storm"</figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn-images.dzcdn.net/images/cover/86a4a8930ae83bb251e20513032015f1/0x1900-000000-80-0-0.jpg" alt="Sabaton" loading="lazy" width="400" height="300">
+          <figcaption><strong>Sabaton</strong> <em>Sueca</em><br>Famosos por su tematica historica y militar.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.rockaxis.com/img/newsList/2646311.jpg" alt="Stratovarius" loading="lazy" width="400" height="300">
+          <figcaption><strong>Stratovarius</strong> <em>Finlandesa</em><br>Pioneros del sonido clásico y rápido del power metal nórdico.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.rockaxis.com/img/newsList/8938553.jpg" alt="Sonata Arctica" loading="lazy" width="400" height="300">
+          <figcaption><strong>Sonata Arctica</strong> <em>Finlandesa</em><br>Piel ventral translúcida.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn-images.dzcdn.net/images/cover/4659d4d1655e3bb97f7195bd8ee0e16e/0x1900-000000-80-0-0.jpg" alt="Powerwolf" loading="lazy" width="400" height="300">
+          <figcaption><strong>Powerwolf</strong> <em>Alemana</em><br>De tematica oscura y estetica profana, han logrado destacar con albumes como "Blessed & possessed" o  "Sacrament of sin".</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="comentarios" aria-labelledby="titulo-comentarios">
+      <h2 id="titulo-comentarios">Deja tu comentario</h2>
+      <form id="formulario" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" maxlength="40" required autocomplete="name">
+          <p class="error" id="error-nombre" role="alert"></p>
+        </div>
+        <div class="campo">
+          <label for="animal">¿Cual es tu banda o canción favorita? (opcional)</label>
+          <input type="text" id="animal" name="animal" maxlength="60">
+        </div>
+        <div class="campo">
+          <label for="comentario">Comentario</label>
+          <textarea id="comentario" name="comentario" rows="4" maxlength="500" required></textarea>
+          <p class="contador" id="contador">0 / 500</p>
+          <p class="error" id="error-comentario" role="alert"></p>
+        </div>
+        <button type="submit" id="enviar">Publicar comentario</button>
+        <p class="estado" id="estado" role="status"></p>
+      </form>
+
+      <h3>Comentarios publicados</h3>
+      <ul id="lista-comentarios" class="comentarios" aria-live="polite">
+        <li class="vacio">Cargando comentarios…</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Proyecto académico de desarrollo web.</p>
+  </footer>
+</body>
+</html>
